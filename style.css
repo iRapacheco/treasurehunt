@@ -1,0 +1,131 @@
+/* style.css */
+
+body {
+	font-family: sans-serif;
+	background-color: #000050;
+	/* Adjust as needed */
+	color: #000050;
+	/* Adjust as needed */
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+
+.container1 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container2 {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container3 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container4 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container5 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container6 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+.container7 {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.password-section {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	width: 50%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	/* Green */
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.gif-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+img {
+	width: 200px;
+	/* Adjust as needed */
+	height: auto;
+}

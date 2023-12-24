@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>🎄 Nível 6 🎄</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="container6">
+		<h1>🎄 Caça ao Presente de Natal do Mozão! 🎄</h1>
+		<p>O sexto e último cartão está no cantinho que o Bijuzinho usa pra estudar!</p>
+
+		<div class="password-section">
+			<label for="password">Digite a resposta do Cartão 6:</label>
+			<input type="text" id="password"><br>
+			<button id="unlock-button">Você está certa disso?</button>
+		</div>
+
+		<div class="gif-container" id="gif-container"> </div>
+
+		<div id="message"></div>
+
+	</div>
+
+	<script>
+		// Store passwords and GIFs for each level
+		const passwords = ["23/04/2022", "Bijuzinho", "Techno", "Mumbai", "6", "LEGO"]; // Replace with your actual passwords
+		// const gifs_right = ["https://media.giphy.com/media/fUMsFIbDNjKg1I65dY/giphy.gif"] // Replace with your GIF URLs
+		// const gifs_wrong = ["https://media.giphy.com/media/3XuEQA6Ygv0StEzuRg/giphy.gif", ...] // Replace with your GIF URLs
+
+		const currentLevel = 6; // Hardcode the current level as 6
+
+		document.getElementById("unlock-button").addEventListener("click", checkPassword);
+
+		function checkPassword() {
+			const enteredPassword = document.getElementById("password").value;
+
+			if (enteredPassword.toLowerCase() === passwords[currentLevel - 1].toLowerCase()) {
+				// Password is correct!
+				document.getElementById("gif-container").innerHTML = `<img src="https://media.giphy.com/media/fUMsFIbDNjKg1I65dY/giphy.gif" alt="Uhuuuu">`;
+				document.getElementById("message").textContent = "Certa Resposta Mozão!!!"
+				document.getElementById("unlock-button").style.display = "none";
+				// ... your code for correct password handling ...
+				setTimeout(() => {
+					window.location.href = "final.html"; // Transition to final page
+				}, 3000);
+			} else {
+				// Incorrect password, display error message and GIF
+				document.getElementById("gif-container").innerHTML = `<img src="https://media.giphy.com/media/3XuEQA6Ygv0StEzuRg/giphy.gif" alt="Booooo">`;
+				document.getElementById("message").textContent = "Poxa Mozão! Tá errado, tenta de novo!";
+				// ... your code for incorrect password handling ...
+			}
+		}
+	</script>
+</body>
+
+</html>
